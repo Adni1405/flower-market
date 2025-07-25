@@ -36,6 +36,54 @@
             font-size: 14px;
             color: #333;
         }
+
+        .banner{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .banner-text{
+            flex-direction: 1 1 300px;
+        }
+
+        .banner-text h1{
+            font-size: 36px;
+            color: #e65100;
+        }
+
+        .banner-text span{
+            color: #333;
+        }
+
+        .banner-text p{
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .banner-image{
+            flex: 1 1 300px;
+            text-align: right;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .banner{
+                flex-direction: column;
+                text-align: center;
+            }
+            header{
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav ul{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -55,5 +103,16 @@
             Cart ($56)
         </div>
     </header>
+
+    <!-- Banner Section -->
+     <section class="banner">
+        <div class="banner-text">
+            <h1>ALWAYS <span>FRESH</span> FLOWERS</h1>
+            <p>Indulge your senses with the beauty and fragrance of fresh flowers. Choose from a wide variety of floral arrangements for any occasion.</p>
+        </div>
+        <div class="banner-image">
+            <img src="assets/hero-flower.png" alt="">
+        </div>
+     </section>
 </body>
 </html>
